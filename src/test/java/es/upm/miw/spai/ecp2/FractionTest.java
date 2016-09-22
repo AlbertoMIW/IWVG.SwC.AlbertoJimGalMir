@@ -30,5 +30,12 @@ private Fraction fraccion1;
     public void testFracciongetNDenominador() {
         assertEquals(2, fraccion1.getDenominator());
     }
-
+    
+    @Test
+    public void testAddOneToNumerator() {
+    	Fraction fraccion2 = new Fraction(2,2);
+    	fraccion1.addOneToNumerator();
+    	assertEquals(fraccion2.getNumerator(), fraccion1.getNumerator());
+    	assertEquals(fraccion2.getDenominator(), fraccion1.getDenominator());
+    }
 }
