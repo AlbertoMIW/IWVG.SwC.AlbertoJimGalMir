@@ -35,33 +35,38 @@ package es.upm.miw.spai.ecp2;
  * 
  */
 public class Fraction {
-    private int numerator;
+	private int numerator;
 
-    private int denominator;
+	private int denominator;
 
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
-    }
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+	}
 
-    public Fraction() {
-        this(1, 1);
-    }
+	public Fraction() {
+		this(1, 1);
+	}
 
-    public int getNumerator() {
-        return numerator;
-    }
+	public int getNumerator() {
+		return numerator;
+	}
 
-    public int getDenominator() {
-        return denominator;
-    }
+	public int getDenominator() {
+		return denominator;
+	}
 
-    public double decimal() {
-        return (double) numerator / denominator;
-    }
-    
-    public Fraction addOneToNumerator() {
-    	this.numerator += 1;
-    	return this;
-    }
+	public double decimal() {
+		return (double) numerator / denominator;
+	}
+
+	public Fraction addOneToNumerator() {
+		this.numerator += 1;
+		return this;
+	}
+
+	public Fraction resta1Numerador() {
+		this.numerator -= 1;
+		return this;
+	}
 }
