@@ -35,4 +35,12 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double getFirstElement() {
+    	try {
+    		return this.collection.get(0);
+    	} catch (Exception e){
+    		System.err.println("ERROR: No elements in collection.");
+    		return Double.NEGATIVE_INFINITY;
+    	}
+    }
 }
