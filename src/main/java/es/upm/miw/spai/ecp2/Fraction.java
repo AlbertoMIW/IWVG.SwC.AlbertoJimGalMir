@@ -69,4 +69,9 @@ public class Fraction {
 		this.numerator -= 1;
 		return this;
 	}
+	
+	public Fraction fractionReverse(){
+		Fraction fractionReversed = new Fraction(this.denominator, this.numerator);
+		return fractionReversed;
+	}
 }
